@@ -9,6 +9,8 @@ const Header = () => {
     const {user, logOut} = useContext(AuthContext)
     const handleLogOut = () =>{
         logOut()
+        .then(result=>{})
+        .catch(error=>{console.log(error.message)})
     }
     return (
         <nav className='header'>
